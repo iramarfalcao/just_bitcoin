@@ -101,9 +101,37 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
-              // color: Colors.black,
-              child: const LinePage(),
+            const LinePage(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: ElevatedButton(
+                      onPressed: () => {},
+                      child: Text('Comprar'),
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.black),
+                      ),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: ElevatedButton(
+                      onPressed: () => {},
+                      child: Text('Vender'),
+                      style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all(Colors.black),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
